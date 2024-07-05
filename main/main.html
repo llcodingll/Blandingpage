@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작당모의</title>
+    <link rel="stylesheet" href="../default/default.css">
+    <link rel="stylesheet" href="../cursor/cursor.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header>
+        <div class="menu-icon" onclick="toggleDropdownMenu()">☰</div>
+        <div class="logo">8월 가평 여행</div>
+        <div id="dropdownMenu" class="dropdown-menu">
+            <a href="#home" onclick="toggleDropdownMenu()">Home</a>
+            <a href="../place/place.html" onclick="toggleDropdownMenu()">Place</a>
+            <a href="../food/food.html" onclick="toggleDropdownMenu()">Food</a>
+            <a href="../play/play.html" onclick="toggleDropdownMenu()">Play</a>
+            <a href="../how_to/route.html" onclick="toggleDropdownMenu()">Route</a>
+            <a href="../gallary/gallary.html" onclick="toggleDropdownMenu()">Gallary</a>
+        </div>
+    </header>
+
+    <!-- 목차 섹션 -->
+    <div class="toc">
+        <div class="toc-item" data-section="home"></div>
+        <div class="toc-item" data-section="place"></div>
+        <div class="toc-item" data-section="food"></div>
+        <div class="toc-item" data-section="games"></div>
+        <div class="toc-item" data-section="directions"></div>
+        <div class="toc-item" data-section="gallary"></div>
+    </div>
+
+    <div id="home">
+        <h1>작당모의 in 가평</h1>
+        <p>8월에 떠날 가평 여행에 대한 간략한 소개입니다.</p>
+    </div>
+    <!-- 메인 콘텐츠 섹션 -->
+    <main>
+        <section id="place">
+            <h2>숙소</h2>
+            <p>우리가 머물 숙소는 깨끗하고 편안한 곳입니다. <a href="place.html">상세 정보 보기</a></p>
+        </section>
+
+        <section id="food">
+            <h2>음식</h2>
+            <p>가평에서 맛볼 수 있는 맛있는 음식들과 식당들을 소개합니다. <a href="food.html">상세 정보 보기</a></p>
+        </section>
+
+        <section id="games">
+            <h2>게임</h2>
+            <p>여행 중 즐길 수 있는 다양한 게임들을 준비했습니다. <a href="play.html">상세 정보 보기</a></p>
+        </section>
+
+        <section id="directions">
+            <h2>이동 경로</h2>
+            <p>각자의 집에서 숙소로 가는 길과 숙소에서 각자의 집으로 돌아오는 길을 안내합니다. <a href="how_to.html">상세 정보 보기</a></p>
+        </section>
+
+        <section id="gallary">
+            <h2>사진</h2>
+            <p>여행 중 찍은 사진들을 모아 놓은 갤러리입니다. <a href="gallary.html">상세 정보 보기</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yoo YoonJi. All rights reserved.</p>
+    </footer>
+    <script src="../default/default.js"></script>
+    <script src="main.js"></script>
+    <script src="../cursor/cursor.js"></script>
+    <div class="cursor"></div>
+</body>
+</html>
