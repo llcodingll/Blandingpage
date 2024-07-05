@@ -1,0 +1,156 @@
+/* 공통 스타일 */
+@font-face {
+    font-family: 'DOSIyagiMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSIyagiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    cursor: none;
+}
+
+/* 공통 CSS */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F3; /* 배경색 - 밝은 베이지 */
+    color: #405D72; /* 기본 텍스트 색상 - 진한 그레이시 블루 */
+    font-family: 'DOSIyagiMedium', Arial, sans-serif; /* 사용할 폰트 지정 */
+}
+
+header {
+    background-color: #405D72; /* 헤더 배경색 - 진한 그레이시 블루 */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background-color: #f7e7dc; /* 배경색 - 연한 베이지 */
+    color: #405d72; /* 텍스트 색상 - 진한 그레이시 블루 */
+    text-align: center;
+    height: 400px; /* 섹션 높이 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url('../images/main2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 80px;
+}
+
+section {
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #405d72; /* 제목 색상 - 진한 그레이시 블루 */
+}
+
+p {
+    color: #758694; /* 일반 텍스트 색상 - 연한 그레이시 블루 */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F7E7DC; /* 로고 텍스트 색상 - 연한 베이지 */
+    text-align: center; /* Center align the text */
+    flex-grow: 1; /* Grow to take up available space */
+}
+
+.menu-icon {
+    font-size: 1.8rem;
+    color: #F7E7DC; /* 메뉴 아이콘 색상 - 연한 베이지 */
+}
+
+.dropdown-menu {
+    width: 120px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #405D72;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #F7E7DC; /* 메뉴 호버 배경색 - 연한 베이지 */
+}
+
+.toc {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.toc-item {
+    width: 10px;
+    height: 10px;
+    background-color: #758694; /* 동그라미 목차 초기 색상 - 연한 그레이시 블루 */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.toc-item.active {
+    background-color: #405D72; /* 동그라미 목차 활성화 색상 - 진한 그레이시 블루 */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #405D72; /* 푸터 배경색 - 연한 베이지 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
