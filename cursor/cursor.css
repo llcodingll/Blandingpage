@@ -1,0 +1,58 @@
+/* 마우스 커서 */
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    mix-blend-mode: difference; /* 빛 효과를 만들기 위해 blend 모드 사용 */
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 효과적으로 빛나는 효과를 주기 위한 그림자 */
+    transform: translate(-50%, -50%);
+}
+
+.cursor.active {
+    display: block;
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+    0%, 100% {
+        background-color: rgba(255, 255, 255, 0.8); /* 투명도 조절 가능한 효과 */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* 빛 효과 */
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+}
+
+/* 메뉴 아이템에 호버 시 점선 테두리 스타일 추가 */
+.menu-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #405D72;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #F7E7DC; /* 호버 시 배경색 변경 - 연한 베이지 */
+    color: #405D72; /* 호버 시 텍스트 색상 변경 - 진한 그레이시 블루 */
+    border: 2px dashed #405D72; /* 호버 시 점선 테두리 추가 */
+}
+
+/* 호버된 메뉴 아이템에 커서 스타일 변경 */
+.menu-item:hover .cursor {
+    background-color: rgba(255, 255, 255, 0.8); /* 호버 시 배경색 변경 - 빛나는 효과 */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* 호버 시 빛 효과 */
+}
